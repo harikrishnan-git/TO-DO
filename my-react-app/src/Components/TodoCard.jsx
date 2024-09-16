@@ -1,18 +1,14 @@
 import React from "react";
 
 export default function Todocard(props) {
-  const { children, index, remTodo, editTodo } = props;
+  const index = props.index;
+  const { remTodo } = props;
+  const { children } = props;
   return (
     <li className="todoItem">
       {children}
       <div className="actionsContainer">
-        <button
-          onClick={() => {
-            editTodo(index);
-          }}
-        >
-          <i className="fa-solid fa-pen-to-square"></i>
-        </button>
+        <i className="fa-solid fa-pen-to-square"></i>
         <button
           onClick={() => {
             remTodo(index);
