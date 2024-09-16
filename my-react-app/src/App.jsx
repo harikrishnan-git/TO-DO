@@ -9,10 +9,15 @@ export default function App() {
     let ntodo = [...todos, newtodo];
     setTodos(ntodo);
   }
+  function remTodo(index) {
+    let ntodos = [...todos];
+    ntodos.splice(index, 1);
+    setTodos(ntodos);
+  }
   return (
     <main>
       <TodoInput addTodo={addTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} remTodo={remTodo} />
     </main>
   );
 }
