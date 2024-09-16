@@ -13,12 +13,14 @@ export default function Todoinput(props) {
         }}
         onKeyUp={(e) => {
           e.key === "Enter" && addTodo(inputData);
+          e.key === "Enter" && setInputData("");
         }}
         placeholder="Add task...."
       />
       <button
         onClick={() => {
           addTodo(inputData);
+          setInputData("");
         }}
       >
         ADD
