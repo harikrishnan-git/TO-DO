@@ -2,8 +2,7 @@ import React from "react";
 import { useState } from "react";
 
 export default function Todoinput(props) {
-  let { addTodo } = props;
-  const [inputData, setInputData] = useState("");
+  let { addTodo, inputData, setInputData } = props;
   return (
     <header>
       <input
