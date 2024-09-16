@@ -11,7 +11,7 @@ export default function App() {
   }
   return (
     <main>
-      <TodoInput todos={todos} />
+      <TodoInput />
       <TodoList todos={todos} />
     </main>
   );
