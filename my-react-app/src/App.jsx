@@ -30,7 +30,7 @@ export default function App() {
     let ntodos = [...todos];
     ntodos.splice(index, 1);
     setTodos(ntodos);
-    persistData(ntodo);
+    persistData(ntodos);
   }
   function editTodo(index) {
     let ntodo = todos[index];
