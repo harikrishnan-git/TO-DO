@@ -41,20 +41,22 @@ header input {
   border-radius: 14px;
   outline: none;
   width: 100%;
+  box-shadow: 6px 7px 3px rgba(0, 0, 0, 0.5);
 }
 
-header button {
+.but {
   border-radius: 14px;
   background: transparent;
   transition-duration: 200ms;
   cursor: pointer;
+  box-shadow: 6px 7px 3px rgba(0, 0, 0, 0.5);
 }
 
-header button:hover {
+.but:hover {
   opacity: 0.7;
 }
 
-header button,
+.but,
 header input {
   padding: 14px 18px;
   border: none;
@@ -79,6 +81,7 @@ p {
   padding: 14px;
   border-radius: 14px;
   background: white;
+  box-shadow: 6px 7px 3px rgba(0, 0, 0, 0.4);
 }
 
 .todoItem p {
