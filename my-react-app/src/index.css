@@ -1,17 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #202124;
-}
-
-h1,
-h2,
-h3,
-input,
-button {
-  font-family: "Press Start 2P", system-ui;
+  /*color: #202124;*/
 }
 
 #root {
@@ -22,6 +18,27 @@ button {
   background: linear-gradient(#b103e7, #e344f1);
   gap: 14px;
 }
+
+.lalezar-regular {
+  font-family: "Lalezar", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@media screen and (min-width: 1000px) {
+  .loginbg {
+    min-height: 500px;
+    min-width: 600px;
+  }
+}
+/* h1,
+h2,
+h3,
+input,
+button {
+  font-family: "Press Start 2P", system-ui;
+}
+
 
 header {
   display: flex;
@@ -114,4 +131,4 @@ p {
   p {
     font-size: 1em;
   }
-}
+} */
